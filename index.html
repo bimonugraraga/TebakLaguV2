@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tebak Lagu V2</title>
+</head>
+<body>
+  <form onsubmit="getNameAndGenre(event)">
+    <label for="playerName">PLAYER NAME</label><br>
+    <input type="text" id="playerName" name="playerName" required><br>
+
+    <input type="radio" id="pop" value="pop" name="genre" required>
+    <label for="pop">POP MUSIC</label><br>
+    <input type="radio" id="rock" value="rock" name="genre">
+    <label for="rock">ROCK'N ROLL MUSIC</label><br>
+
+    <button id="dataUser"  onclick="goToGame()">Submit</button>
+    <!-- <a target="index2.html"><button id="dataUser" onclick="goToGame()">Submit</button></a> -->
+
+
+  </form>
+  <!-- <button onclick="musicQuiz()">OK</button> -->
+</body>
+<script src="index.js"></script>
+</html>
